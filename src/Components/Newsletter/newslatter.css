@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newsletterCard {
+    background: no-repeat url('../../assets/Newsletter.png') 0 0 / 100% 100%;
+}

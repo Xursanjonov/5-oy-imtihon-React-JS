@@ -1,0 +1,17 @@
+img {
+    object-fit: contain;
+}
+
+.homeHero {
+    background: no-repeat url('../../assets//Home//homeHero.png') 0 0 / 100% 100%;
+}
+.getCard {
+    background: no-repeat url('../../assets//Home//garden.svg') 0 0 /  100% 100%;
+}
+
+.HomeNewsCard1 {
+    background: no-repeat url('../../assets/Home/benefits.png') 0 0 / 100% 100%;
+}
+.HomeNewsCard2 {
+    background: no-repeat url('../../assets/Home/favourite.png') 0 0 / 100% 100%;
+}
