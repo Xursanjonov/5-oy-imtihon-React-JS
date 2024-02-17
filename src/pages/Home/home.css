@@ -15,3 +15,15 @@ img {
 .HomeNewsCard2 {
     background: no-repeat url('../../assets/Home/favourite.png') 0 0 / 100% 100%;
 }
+.customer {
+    background: no-repeat url('../../assets/Home/customer.png') 0 0 / 100% 100%;
+}
+.OrganicJuice {
+    background: no-repeat url('../../assets/Home/organicJuice.png') 0 0 / 100% 100%;
+}
+.OrganicFood {
+    background: no-repeat url('../../assets/Home/organicFood.png') 0 0 / 100% 100%;
+}
+.NutsCookis {
+    background: no-repeat url('../../assets/Home/nutsCookis.png') 0 0 / 100% 100%;
+}

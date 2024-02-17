@@ -3,8 +3,9 @@ import img from '../../../assets/Home/Believe.svg'
 import img1 from '../../../assets/Icons/foodsOnly-icon.png'
 import img2 from '../../../assets/Icons/standarts-icon.svg'
 import btnIcon from '../../../assets/chap-strelka.svg';
+import { Link } from 'react-router-dom';
 
-export const BelieveMiniCard = ({img, title, text}) => {
+export const BelieveMiniCard = ({ img, title, text }) => {
   try {
     return (
       <div className='px-4 py-2 flex items-center justify-center gap-4 rounded-lg hover:shadow-lg hover:shadow-blue-500 bg-gray-100'>
@@ -15,7 +16,7 @@ export const BelieveMiniCard = ({img, title, text}) => {
         </div>
       </div>
     )
-  } catch (e) {console.log(e);}
+  } catch (e) { console.log(e); }
 }
 
 export const Believe = () => {
@@ -33,7 +34,11 @@ export const Believe = () => {
           <BelieveMiniCard img={img1} title={'Organic Foods Only'} text={'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'} />
           <BelieveMiniCard img={img2} title={'Quality Standards'} text={'Simply dummy text of the printing and typesetting industry. Lorem Ipsum'} />
         </div>
-        <button className='mt-[3rem] px-4 py-3 flex items-center justify-center gap-4 rounded-lg font-bold text-white bg-blue-900'>Shop Now <img src={btnIcon} alt="" /> </button>
+        <Link to={`/shop`} >
+          <button className='mt-[3rem] px-4 py-3 flex items-center justify-center gap-4 rounded-lg font-bold text-white bg-blue-900'>
+            Shop Now  <img src={btnIcon} alt="" />
+          </button>
+        </Link>
       </div>
     </div>
   )

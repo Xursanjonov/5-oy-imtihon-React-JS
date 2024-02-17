@@ -3,8 +3,7 @@ import { MainLayout } from "./layout/main-layout.jsx";
 import { nanoid } from "nanoid";
 import { main_pages } from "./router/main-router";
 import { NotFound } from "./pages/NotFound/NotFound.jsx";
-
-// import { About } from "./pages/about";
+import { ShopSingle } from "./pages/ShopSingle/ShopSingle.jsx";
 
 function App() {
   return (
@@ -19,8 +18,9 @@ function App() {
               element={route.component}
             />
           ))}
+          <Route path="shopSingle/" element={<ShopSingle />} />
         </Route>
-        <Route path="*" element={<NotFound/>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

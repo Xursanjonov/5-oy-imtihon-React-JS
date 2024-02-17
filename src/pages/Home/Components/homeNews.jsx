@@ -69,7 +69,7 @@ export const HomeNews = () => {
           <p className='text-xl italic font-semibold text-green-500'>News</p>
           <h2 className='w-[540px] mt-2 text-4xl font-bold text-blue-900'>Discover weekly content about organic food, & more</h2>
         </div>
-        <Link to={'/news'} > <HomeNewsBtn title={'More News'} /> </Link>
+        <Link to={'news'} > <HomeNewsBtn title={'More News'} /> </Link>
       </div>
       <div className="HomeNewsCard pb-6 grid grid-cols-2 items-center justify-center">
         <HomeNewsCard1 />
