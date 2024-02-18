@@ -2,23 +2,29 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/Logo.svg'
 
+export const HeaderPageLink = ({links, name})=>{
+  try {
+    return (
+      <p className='text-xl text-black hover:text-green-500'> <Link to={`${links}`}>{name}</Link> </p>
+    )
+  } catch (e) {}
+}
+
 export const Header = () => {
   return (
-    <header className='px-[4rem] sticky top-0 z-50 flex items-center justify-between bg-white py-4'>
-      <Link to='/'>
-        <img src={logo} alt="Logo" />
-      </Link>
-      <div className="header-center flex items-center justify-center gap-6 font-bold">
-        <p className='text-xl text-black hover:text-green-500'> <Link to='/'>Home</Link> </p>
-        <p className='text-xl text-black hover:text-green-500'> <Link to='/about'>About</Link> </p>
-        <p className='text-xl text-black hover:text-green-500'> <Link to='/pages'>Pages</Link> </p>
-        <p className='text-xl text-black hover:text-green-500'> <Link to='/shop'>Shop</Link> </p>
-        <p className='text-xl text-black hover:text-green-500'> <Link to='/projects'>Projects</Link> </p>
-        <p className='text-xl text-black hover:text-green-500'> <Link to='/news'>News</Link> </p>
+    <header className='px-[4rem] py-6 sticky top-0 z-50 flex items-center justify-between bg-white'>
+      <Link to='/'> <img src={logo} alt="Logo" /> </Link>
+      <div className="header-center flex items-center justify-center gap-6 font-bold">  
+        <HeaderPageLink links={'/'} name={'Home'} />
+        <HeaderPageLink links={'/about'} name={'About'} />
+        <HeaderPageLink links={'/shopSingle'} name={'Pages'} />
+        <HeaderPageLink links={'/shop'} name={'Shop'} />
+        <HeaderPageLink links={'/projects'} name={'Projects'} />
+        <HeaderPageLink links={'/news'} name={'News'} />
       </div>
       <div className="header-end flex items-center justify-center gap-4">
         <form className='w-[250px] flex items-center justify-center '>
-          <input id="search" className='py-3 font-semibold italic ps-2.5 pe-[35px] text-black rounded-[40px] border-[1px] border-gray-100 bg-transparent' type="search" name="" />
+          <input id="search" className='py-3 ps-4 pe-[35px] font-semibold italic text-black rounded-[40px] border-[1px] border-gray-100 bg-transparent' type="search" name="" />
           <div className="ms-[-45px] p-3 rounded-full flex items-center text-white justify-center bg-green-600">
             <i className="fa-solid fa-search"></i>
           </div>

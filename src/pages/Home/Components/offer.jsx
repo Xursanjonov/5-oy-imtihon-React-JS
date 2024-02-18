@@ -14,11 +14,11 @@ export const Offer = () => {
                     <p className='my-2 italic text-2xl text-green-500'>Offer</p>
                     <h1 className='text-5xl font-bold text-white'>We Offer Organic For You</h1>
                 </div>
-                <Link> <Buttun title={'View All Product'} icon={true} /> </Link>
+                <Link to={`shop`}> <Buttun title={'View All Product'} icon={true} /> </Link>
             </div>
             <div className="mt-12 grid grid-cols-4 items-center justify-center gap-8">
                 {Products?.map((item) => (
-                    item.category == 'Offer' ? <Link to={`/shop/${item.id}`}> <OfferCard key={item.id} {...item} /> </Link> :''
+                    item.category == 'Offer' ? <Link to={`/shopSingle/${item.id}`}> <OfferCard key={item.id} {...item} /> </Link> :''
                 ))}
             </div>
         </section>
