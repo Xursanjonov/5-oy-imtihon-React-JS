@@ -1,6 +1,4 @@
 import React from 'react'
-import { Header } from '../../layout/header/header'
-import { Footer } from '../../layout/footer/footer'
 import { CreativeBtn } from '../About/components/creative'
 import { Link } from 'react-router-dom'
 import './notfound.css'
@@ -9,7 +7,6 @@ export const NotFound = () => {
   try {
     return (
       <>
-        <Header />
         <section className='NotFound w-full px-5 h-[100vh] flex justify-end'>
           <div className="mt-16 pe-24 flex flex-col items-start">
             <h1 className='text-[13rem] font-black'>404</h1>
@@ -18,7 +15,6 @@ export const NotFound = () => {
             <Link to={`/`} > <CreativeBtn nameBtn={'Go to Homepage'} /> </Link>
           </div>
         </section>
-        <Footer />
       </>
     )
   } catch (e) { }

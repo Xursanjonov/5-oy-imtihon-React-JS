@@ -1,5 +1,5 @@
 import React from 'react'
-import { OurProductsCard } from '../home/Components/OurProductsCard'
+import { OurProductsCard } from '../Home/Components/OurProductsCard'
 import { Newsletter } from '../../Components/Newsletter/newsletter'
 import { Products } from '../../data/Products'
 import { Link } from 'react-router-dom'
@@ -11,7 +11,7 @@ export const Shop = () => {
       <ShopHero />
       <div className="px-[5rem] py-[4rem]  flex flex-wrap items-center justify-center gap-6">
         {Products?.map((item)=> (
-          item.categoryAll? <Link to={`/shop/${item.id}`}> <OurProductsCard key={item.id} {...item} /> </Link>: ''
+          item.categoryAll? <Link to={`/shopSingle/${item.id}`}> <OurProductsCard key={item.id} {...item} /> </Link>: ''
         ))}
       </div>
       <Newsletter />
