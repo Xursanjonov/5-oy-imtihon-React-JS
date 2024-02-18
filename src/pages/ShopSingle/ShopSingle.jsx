@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 import './shopsingle.css'
 import { Productdetails } from './components/productdetails'
 
+
 export const ShopSingle = () => {
 
   return (
